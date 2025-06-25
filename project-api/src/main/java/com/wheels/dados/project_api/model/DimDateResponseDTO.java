@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class DimDateResponseDTO {
     private Integer dateId;
-    private LocalDate data; // O campo 'Data' da sua tabela DimDate
+    private LocalDate data;
     private String nomeMes;
     private Integer ano;
 

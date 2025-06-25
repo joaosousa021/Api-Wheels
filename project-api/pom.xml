@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 
 	<groupId>com.wheels.dados</groupId>
@@ -42,6 +42,8 @@
 
 	<properties>
 		<java.version>17</java.version>
+		<spring-boot.build-image.imageName>${docker.image.prefix}/${project.artifactId}</spring-boot.build-image.imageName>
+		<docker.image.prefix>joaosousa021</docker.image.prefix>
 	</properties>
 
 

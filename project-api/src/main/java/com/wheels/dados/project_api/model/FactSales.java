@@ -12,7 +12,7 @@ public class FactSales {
     private Integer saleID;
 
 
-    @ManyToOne(fetch = FetchType.LAZY) // LAZY é geralmente bom para performance
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "DateID", nullable = false)
     private DimDate dimDate;
 

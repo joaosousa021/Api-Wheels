@@ -12,13 +12,13 @@ public class CurrentRental {
     @Column(name = "RentalID")
     private Integer rentalID;
 
-    @ManyToOne(fetch = FetchType.LAZY) // Define o relacionamento
-    @JoinColumn(name = "CustomerID", nullable = false) // Coluna FK no banco CurrentRentals
-    private DimCustomer dimCustomer; // Referência ao objeto DimCustomer
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "CustomerID", nullable = false)
+    private DimCustomer dimCustomer;
 
-    @ManyToOne(fetch = FetchType.LAZY) // Define o relacionamento
-    @JoinColumn(name = "BikeID", nullable = false) // Coluna FK no banco CurrentRentals
-    private DimBike dimBike; // Referência ao objeto DimBike
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "BikeID", nullable = false)
+    private DimBike dimBike;
 
     @Column(name = "RentalStart", nullable = false)
     private LocalDateTime rentalStart;
@@ -29,11 +29,11 @@ public class CurrentRental {
     @Column(name = "Observations")
     private String observations;
 
-    // Construtor padrão
+
     public CurrentRental() {
     }
 
-    // Getters e Setters para todos os campos, incluindo os novos
+
     public Integer getRentalID() {
         return rentalID;
     }

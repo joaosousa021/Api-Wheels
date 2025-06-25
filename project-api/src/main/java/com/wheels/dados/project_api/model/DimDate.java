@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class DimDate {
 
     @Id
-    @Column(name = "DateId") // Chave Primária, não auto-incrementável
+    @Column(name = "DateId")
     private Integer dateId;
 
     @Column(name = "Data", nullable = false)
